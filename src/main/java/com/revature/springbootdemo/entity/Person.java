@@ -26,7 +26,6 @@ public class Person {
     private String name;
     private String password;
 
-    // TODO set up the relationship with the pet class
     @OneToMany(targetEntity = Pet.class, cascade = CascadeType.ALL)
     // set up the column in the pet table
     @JoinColumn(name = "person_fk", referencedColumnName = "id")
